@@ -4,3 +4,117 @@
 .circulo-1{
     border-radius: 100px;
 }
+/* Carrusel */
+.carousel{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* secciones 1 */
+.pading-7{
+    padding: 0 10% 0 10% ;
+}
+.seccion-1{
+    height:45cap;
+    position: relative;
+}
+.position-top{
+    position: relative;
+    bottom: 100px;
+}
+
+.contenedor-imagen {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen {
+    transition: transform 0.3s ease;
+}
+
+.contenedor-imagen:hover .imagen {
+    transform: scale(1.2); /* Ajusta el valor para controlar el nivel de zoom */
+}
+.contenedor-imagen .card-title{
+    color: white;
+}
+.contenedor-imagen .card-text{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .carousel{
+        margin-top: 57px;
+    }
+    .pading-7{
+        padding: 0 30px 0 30px ;
+        margin-top: 0;
+    }
+    .seccion-1{
+        height:450px;
+    }
+}
+    
+
+@media (max-width: 649px) {
+    .position-top{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+        height: -100px;
+    }
+    .seccion-1{
+        height: 200px;;
+    }
+    .presupuesto-empresa{
+        font-size: 1px;
+        padding: 0 20px 0 ;
+    }
+    .presupuesto-empresa .card-title{
+        font-size: 14px;
+    }
+    .presupuesto-empresa .card-text{
+        font-size: 12px;
+    }
+    .presupuesto-empresa a{
+        font-size: 11px;
+    }
+
+    .registrate-aviso{
+        font-size: 1px;
+        padding: 0 20px 0 ;
+    }
+}
+@media (max-width:400px) {
+    .pading-7{
+        padding: 0 10px 0 10px ;
+    }
+    .seccion-1{
+        height: 140px;;
+    }
+
+    .registrate-aviso .card-title{
+        font-size: 14px;
+    }
+    .registrate-aviso .card-text{
+        font-size: 12px;
+    }
+    .registrate-aviso button{
+        font-size: 11px;
+    }
+
+    .registrate-aviso{
+        font-size: 1px;
+        margin-top: 20px;
+    }
+}
+  
