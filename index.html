@@ -13,16 +13,21 @@
     <!--CSS estilos propios -->
     <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/general.css">
+
+    <!-- Links Externos -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="charizard.png" type="image/x-icon">
 
 
 </head>
 <body>
 <div class="container-fluid text-dark bg-opacity-10 ">
     <!--  Navbar de inicio-->
-    <div class="row shadow-lg rounded ">
-        <div class="col-4 col-md-4 col-lg-4 text-center fs-5 bg-gris">📞 3106968428 <a href="">Contacto</a> | <a href="">Blog</a> </div>
-        <div class="col-4 col-md-4 col-lg-4 text-center bg-gris">
+    <div class="row shadow-lg ">
+        <div class="col-4 col-md-4 col-lg-4  encabezado1"> 📞 3106968428 <a href="" class="mx-3">Contacto</a> | <a href="" class="mx-3">Blog</a> </div>
+        <div class="col-4 col-md-4 col-lg-4 text-center encabezado1">
             <style>
                 /* Estilo para el mensaje */
                 #mensaje {
@@ -38,7 +43,7 @@
              <script>
                  // Array con los mensajes
                  const mensajes = [
-                     "Envíos Gratis a Tunja",
+                     "Envíos GRATIS en Tunja capital a partir de $10.000",
                      "Entrega en 24 o 48 horas"
                  ];
          
@@ -70,24 +75,69 @@
                  setInterval(cambiarMensaje, 5000); // Cambia cada 5 segundos
              </script>
         </div>
-        <div class="col-4 col-md-4 col-lg-4 text-center fs-5 bg-gris">Siguenos 📧 📧 📧 📧</div>
-
-        <div class="col-4 col-sm-3 col-md-4 col-lg-4 ">
-            <img class="rounded" src="img/logo.png" width="100px"alt="">
+        <div class="col-4 col-md-4 col-lg-4 text-center encabezado1">
+            <div class="iconos">
+               
+                <div class="ico">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="ico">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+                <div class="ico">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-whatsapp'></i>
+                </div>
+                <div class="ico">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-x' > <img src="../img/iconos/x.png" heigth="40" width="40" alt=""></i>
+                </div>
+                <div class="ico">
+                    <svg >
+                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-youtube'></i>
+                </div>
+                <div class="ico">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-tiktok'></i>
+                </div>   
+            </div>
         </div>
-        <div class="col-8 col-sm-9 col-md-8 col-lg-8   text-center">
+       
+        
+        <div class="col-4 col-sm-3 col-md-3 col-lg-4  align-content-center d-flex justify-content-center encabezado2">
+            <img class="circulo-1" src="img/banner.png"  width="90%">
+            
+        </div>
+        <div class="col-8 col-sm-9 col-md-9 col-lg-8 text-center encabezado2">
             <div class="row d-flex mx-auto my-4 align-content-center align-items-center justify-content-center  ">
-                <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center">
+                <div class="col-4 col-sm-4 col-md-6 col-lg-6 text-center">
                     <form class="d-flex">
                         <input class="form-control me-2" type="search" placeholder="Buscar producto..." aria-label="Search">
                         <button class="text-dark btn btn-outline-success bg-success" type="submit">Buscar</button>
                     </form>  
                 </div>
-                <div class="col-4 col-sm-4 col-md-4 col-lg-4 text-center"><a href="">Acceder/ Registrarse</a></div>
-                <div class="col-4 col-sm-4 col-md-4 col-lg-4  text-center">🛒 $000</div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-3 text-center"><a href="">Acceder/ Registrarse</a></div>
+                <div class="col-4 col-sm-4 col-md-3 col-lg-3  text-center">🛒 $000</div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light "> <!-- fixed-top -->
+
+
+        <!-- Menu -->
+        <nav class="navbar navbar-expand-lg navbar-light "> <!-- fixed-top -->
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -236,20 +286,17 @@
         <div class="col-12">
             <h1 class="text-center py-3 fw-bold ">Nuestros productos</h1>
             <p class="fs-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto provident eum necessitatibus eveniet quaerat blanditiis quam 
-                consequuntur quasi exercitationem ab! Nemo iusto illum necessitatibus rem ratione ipsam sit inventore 
-                doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ut, vero sunt fugit delectus
-                velit a inventore fuga laboriosam culpa asperiores doloribus recusandae ullam accusantium reiciendis dicta, ad commodi obcaecati!
+                En Fruver La Huerta, nos enorgullece ofrecerte lo mejor de la naturaleza en cada bocado. Nuestros productos son cultivados con amor y cuidado, directamente desde la huerta hasta tu mesa.
+                ¿Qué encontrarás en nuestro rincón de delicias? ¡Déjanos presentarte algunos de nuestros tesoros frescos:
             </p>
         </div> 
-        <div class="col-12 bg-success">
+        <div class="col-12 ">
             <div class="row align-content-center d-flex justify-content-center">
                 <div class="col-12 align-content-center d-flex justify-content-center">
-                    <img src="img/Inicio-recursos/canastas.jpg" class="rounded-3" width="70%" alt="">
+                    <img src="img/Inicio-recursos/canastas.jpg" class="redondear" width="80%" alt="">
                 </div>
                 <div class="col-6 align-content-center d-flex justify-content-center ">
-                    <div class="text-center rounded-3 bg-white" >
+                    <div class="text-center bg-white" >
                         <h2>Online, sencillo y sabroso</h2> <br>
                         <p class="fs-5"  >
                             Fruta y verdura del campo a la mesa. En el Fruver la Huerta ofrecemos multitud
@@ -556,7 +603,7 @@
             <h3 class="text-center ">¿Porque comprar en Fruver la Huerta?</h3>
             <div class="row">
                 <div class="col-12 col-sm-5 col-md-5 col-lg-4 ">
-                    <img src="img/Inicio-recursos/mujer-jugo.jpg" class="w-100 rounded-3" alt="">
+                    <img src="img/Inicio-recursos/mujer-jugo.jpg" class="w-100" alt="">
                 </div>
                 <div class="col-12 col-sm-7 col-md-7 col-lg-8 align-content-center d-grid justify-content-center">
                     <p class="fs-5">
@@ -577,10 +624,10 @@
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
             <div class="row align-content-center d-flex justify-content-center">
                 <div class="col-12 align-content-center d-flex justify-content-center">
-                    <img src="img/Inicio-recursos/canastas.jpg" class="rounded-3 w-100"  alt="">
+                    <img src="img/Inicio-recursos/canastas.jpg" class=" w-100"  alt="">
                 </div>
                 <div class="col-10 align-content-center d-flex justify-content-center ">
-                    <div class="text-center rounded-3 bg-white" >
+                    <div class="text-center bg-white" >
                         <h4>Frutas y verduras en Temporada</h4> 
                         <p class="fs-6"  >
                             Tener frutas y verduras en casa es más sencillo que nunca, con nuestra frutería online [...]
@@ -593,10 +640,10 @@
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
             <div class="row align-content-center d-flex justify-content-center">
                 <div class="col-12 align-content-center d-flex justify-content-center">
-                    <img src="img/Inicio-recursos/fresas.jpg" class="rounded-3 w-100"  alt="">
+                    <img src="img/Inicio-recursos/fresas.jpg" class="w-100"  alt="">
                 </div>
                 <div class="col-10 align-content-center d-flex justify-content-center ">
-                    <div class="text-center rounded-3 bg-white" >
+                    <div class="text-center bg-white" >
                         <h4> Comprar frutas y verduras online, ¿conservan el sabor?</h4> 
                         <p class="fs-6"  >
                         Cada día estamos más acostumbrados a realizar todas nuestras compras en Internet, desde regalos hasta [...]
@@ -609,10 +656,10 @@
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
             <div class="row align-content-center d-flex justify-content-center">
                 <div class="col-12 align-content-center d-flex justify-content-center">
-                    <img src="img/Inicio-recursos/mango.jpg" class="rounded-3 w-100"  alt="">
+                    <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
                 </div>
                 <div class="col-10 align-content-center d-flex justify-content-center ">
-                    <div class="text-center rounded-3 bg-white" >
+                    <div class="text-center bg-white" >
                         <h4> Fruver la Huerta 1.0</h4> 
                         <p class="fs-6"  >
                             Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
@@ -682,10 +729,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/canastas.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/canastas.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4>Frutas y verduras en Temporada</h4> 
                                 <p class="fs-6"  >
                                     Tener frutas y verduras en casa es más sencillo que nunca, con nuestra frutería online [...]
@@ -698,10 +745,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/fresas.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/fresas.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center  bg-white" >
                                 <h4> Comprar frutas y verduras online, ¿conservan el sabor?</h4> 
                                 <p class="fs-6"  >
                                 Cada día estamos más acostumbrados a realizar todas nuestras compras en Internet, desde regalos hasta [...]
@@ -714,10 +761,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4> Fruver la Huerta 1.0</h4> 
                                 <p class="fs-6"  >
                                     Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
@@ -730,10 +777,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4> Fruver la Huerta 1.0</h4> 
                                 <p class="fs-6"  >
                                     Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
@@ -750,10 +797,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/canastas.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/canastas.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4>Frutas y verduras en Temporada</h4> 
                                 <p class="fs-6"  >
                                     Tener frutas y verduras en casa es más sencillo que nunca, con nuestra frutería online [...]
@@ -766,10 +813,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/fresas.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/fresas.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4> Comprar frutas y verduras online, ¿conservan el sabor?</h4> 
                                 <p class="fs-6"  >
                                 Cada día estamos más acostumbrados a realizar todas nuestras compras en Internet, desde regalos hasta [...]
@@ -782,10 +829,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4> Fruver la Huerta 1.0</h4> 
                                 <p class="fs-6"  >
                                     Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
@@ -798,10 +845,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4> Fruver la Huerta 1.0</h4> 
                                 <p class="fs-6"  >
                                     Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
@@ -818,10 +865,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/canastas.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/canastas.jpg" class="-3 w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4>Frutas y verduras en Temporada</h4> 
                                 <p class="fs-6"  >
                                     Tener frutas y verduras en casa es más sencillo que nunca, con nuestra frutería online [...]
@@ -834,10 +881,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/fresas.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/fresas.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4> Comprar frutas y verduras online, ¿conservan el sabor?</h4> 
                                 <p class="fs-6"  >
                                 Cada día estamos más acostumbrados a realizar todas nuestras compras en Internet, desde regalos hasta [...]
@@ -850,10 +897,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4> Fruver la Huerta 1.0</h4> 
                                 <p class="fs-6"  >
                                     Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
@@ -866,10 +913,10 @@
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
                     <div class="row align-content-center d-flex justify-content-center">
                         <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="rounded-3 w-100"  alt="">
+                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
                         </div>
                         <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center rounded-3 bg-white" >
+                            <div class="text-center bg-white" >
                                 <h4> Fruver la Huerta 1.0</h4> 
                                 <p class="fs-6"  >
                                     Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]

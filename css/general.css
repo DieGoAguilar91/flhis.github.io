@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* Comica */
+/* *{
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+} */
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+/* Redes Sociales */
+.iconos{
+    height: 40px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ico {
+  
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+    border-radius: 50%;
+    transition: all .8s;
+    cursor: pointer;
+}
+.iconos svg{
+    width: 40px;
+    height: 40px;
+}
+
+.ico:hover {
+    background-color: #e60073;
+    box-shadow:  0 0 10px #e60073 ;
+}
+
+.ico:hover:nth-child(2) {
+    background-color: #1877f2;
+    box-shadow:  0 0 20px #1877f2;
+}
+
+.ico:hover:nth-child(3) {
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366 ;
+}
+
+.ico:hover:nth-child(4) {
+    background-color: black;
+    box-shadow:  0 0 20px black ;
+}
+
+.ico:hover:nth-child(5) {
+    background-color: red;
+    box-shadow:  0 0 20px red ;
+}
+.ico:hover:nth-child(6) {
+    background-color: black;
+    box-shadow:  0 0 20px black;
+}
+.ico i {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 1.9rem;
+}
+
+svg circle {
+    stroke-dasharray: 70;
+    transition: all .8s ease-in-out;
+}
+
+.ico:hover circle {
+    stroke-dasharray: 110;
+}
