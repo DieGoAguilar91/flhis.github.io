@@ -19,6 +19,7 @@
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="charizard.png" type="image/x-icon">
+    
 
 
 </head>
@@ -28,7 +29,7 @@
     <div class="row menu-total">
         <div class="col-12 menu">
             <div class="row bg-white">
-                <div class="col-4 col-md-4 col-lg-4  encabezado1"> 📞 3106968428 <a href="" class="mx-3">Contacto</a> | <a href="" class="mx-3">Blog</a> </div>
+                <div class="col-4 col-md-4 col-lg-4  encabezado1"> ☎️ 3106968428 <a href="" class="mx-3">📞 Contacto</a> | <a href="" class="mx-3">📒 Blog</a> </div>
                 <div class="col-12 col-sm-12  mx-0 my-0 col-md-12 col-lg-4 text-center mensaje-auto">
                     <style>
                         /* Estilo para el mensaje */
@@ -45,8 +46,8 @@
                      <script>
                          // Array con los mensajes
                          const mensajes = [
-                             "Envíos GRATIS en Tunja capital a partir de $10.000",
-                             "Entrega en 24 o 48 horas"
+                             "✅ Envíos GRATIS en Tunja capital a partir de $10.000",
+                             " Entrega en 24 o 48 horas 🛵"
                          ];
                  
                          // Elemento del DOM para mostrar el mensaje
@@ -102,7 +103,37 @@
                             <svg>
                                 <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
                             </svg>
-                            <i class='bx bxl-x' > <img src="../img/iconos/x.png" heigth="40" width="40" alt=""></i>
+                            <i class='bx bxl-x' >
+                                <!-- Imagen 1 -->
+                                <img src="img/iconos/x-negro.png" alt="Imagen 1" class="imagen" id="imagen1" heigth="32" width="32">
+
+                                <!-- Imagen 2 (inicialmente oculta) -->
+                                <img src="img/iconos/x.png" heigth="37" width="37" alt="Imagen 2" class="imagen" id="imagen2" style=" display: none; ">
+                                
+                                <script>
+                                    // Obtener referencias a las imágenes
+                                    const imagen1 = document.getElementById('imagen1');
+                                    const imagen2 = document.getElementById('imagen2');
+
+                                    // Evento al pasar el cursor sobre la imagen 1
+                                    imagen1.addEventListener('mouseover', () => {
+                                        // Ocultar imagen 1
+                                        imagen1.style.display = 'none';
+                                        // Mostrar imagen 2
+                                        imagen2.style.display = 'block';
+                                    });
+
+                                    // Evento al quitar el cursor de la imagen 2
+                                    imagen2.addEventListener('mouseout', () => {
+                                        // Mostrar imagen 1
+                                        imagen1.style.display = 'block';
+                                        // Ocultar imagen 2
+                                        imagen2.style.display = 'none';
+                                    });
+                                </script>
+                               
+                            
+                            </i>
                         </div>
                         <div class="ico">
                             <svg >
@@ -130,8 +161,10 @@
                                 <button class="text-dark btn btn-outline-success bg-success" type="submit">Buscar</button>
                             </form>  
                         </div>
-                        <div class="col-4 col-sm-4 col-md-3 col-lg-3 text-center"><a href="">Acceder/ Registrarse</a></div>
-                        <div class="col-4 col-sm-4 col-md-3 col-lg-3  text-center">🛒 $000</div>
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3 text-center"><a href="">📱 Acceder/ Registrarse</a></div>
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3  text-center">
+                            <a href="#" class="btn btn-success">🧺 000 $</a> 
+                        </div>
                     </div>
                 </div>
 
@@ -149,18 +182,18 @@
                         <div class="offcanvas-body">
                           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                              <a class="nav-link active" aria-current="page" href="#">🏠 Inicio</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Tienda
+                                    🏪 Tienda
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                  <li><a class="dropdown-item" href="#">Frutas</a></li>
-                                  <li><a class="dropdown-item" href="#">Verduras</a></li>
-                                  <li><a class="dropdown-item" href="#">Abarrotes</a></li>
-                                  <li><a class="dropdown-item" href="#">Carnes</a></li>
-                                  <li><a class="dropdown-item" href="#">Lacteos</a></li>
+                                  <li><a class="dropdown-item" href="#">🍇 Frutas</a></li>
+                                  <li><a class="dropdown-item" href="#">🥑 Verduras</a></li>
+                                  <li><a class="dropdown-item" href="#">🧃 Abarrotes</a></li>
+                                  <li><a class="dropdown-item" href="#">🥩 Carnes</a></li>
+                                  <li><a class="dropdown-item" href="#">🧀 Lacteos</a></li>
                                   <!-- <li>
                                     <hr class="dropdown-divider">
                                   </li>
@@ -168,19 +201,19 @@
                                 </ul>
                               </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Ofertas</a>
+                              <a class="nav-link" href="#">🎁 Ofertas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Catalogo</a>
+                                <a class="nav-link" href="#">📖 Catalogo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Blog</a>
+                                <a class="nav-link" href="#">📒 Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Nosotros</a>
+                                <a class="nav-link" href="#">👨‍🌾 Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contactanos</a>
+                                <a class="nav-link" href="#">📞 Contactanos</a>
                             </li>
                           </ul>
                         
@@ -967,28 +1000,28 @@
     
     <!-- Seccion de Categorias -->
     <div class="row my-4">
-        <a href="#" class="btn btn-success col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center">
-            <img src="img/Categorias/frutas.jpg" class="w-100" height="200px" alt=""> 
+        <a href="#" class=" col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
+            <img src="img/Categorias/frutas.jpg" class="imagen-cambiante circulo-1 " height="200px" alt=""> 
             <h3>Frutas</h3>
         </a>
-        <a href="#" class="btn btn-warning col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center">
-            <img src="img/Categorias/pimenton.jpg" class="w-100" height="200px" alt=""> 
+        <a href="#" class=" col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
+            <img src="img/Categorias/pimenton.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
             <h3>Verduras</h3>
         </a>
-        <a href="#" class="btn btn-success col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center">
-            <img src="img/Categorias/yerbas.jpg" class="w-100" height="200px" alt=""> 
+        <a href="#" class=" col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
+            <img src="img/Categorias/yerbas.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
             <h3>Aromaticas</h3>
         </a>
-        <a href="#" class="btn btn-warning col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center">
-            <img src="img/Categorias/abarrotes.jpg" class="w-100" height="200px" alt=""> 
+        <a href="#" class="col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
+            <img src="img/Categorias/abarrotes.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
             <h3>Abarrotes</h3>
         </a>
-        <a href="#" class="btn btn-success col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center">
-            <img src="img/Categorias/carnes.jpg" class="w-100" height="200px" alt=""> 
+        <a href="#" class=" col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
+            <img src="img/Categorias/carnes.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
             <h3>Carnes</h3>
         </a>
-        <a href="#" class="btn btn-warning col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center">
-            <img src="img/Categorias/lacteos.jpg" class="w-100" height="200px" alt=""> 
+        <a href="#" class="col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
+            <img src="img/Categorias/lacteos.jpg" class="imagen-cambiante circulo-1 " alt=""> 
             <h3>Lacteos</h3>
         </a>
         
@@ -999,71 +1032,137 @@
     <div class="container-fluid bg-white">
         <footer class="py-4">
           <div class="row">
-            <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-              <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
-              </ul>
-            </div>
-      
-            <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-              <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
-              </ul>
-            </div>
-      
-            <div class="col-6 col-sm-6 col-md-2 col-lg-2">
-              <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
-              </ul>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2  my-3" >
                 <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
                 <ul class="nav flex-column">
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></a></li>
-                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
                 </ul>
-              </div>
-      
-            <div class=" col-12 col-sm-12 col-md-4 col-lg-4 ">
-              <form>
-                <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Suscríbete a nuestro boletín</font></font></h5>
-                <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resumen mensual de nuestras novedades y novedades.</font></font></p>
-                <div class="d-flex w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección de correo electrónico</font></font></label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Dirección de correo electrónico">
-                  <button class="btn btn-primary" type="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Suscribir</font></font></button>
                 </div>
-              </form>
-            </div>
+        
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2  my-3">
+                <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
+                </ul>
+                </div>
+        
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2  my-3">
+                <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
+                </ul>
+                </div>
+
+                <div class="col-6 col-sm-6 col-md-3 col-lg-2  my-3">
+                    <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
+                    <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
+                    </ul>
+                </div>
+        
+                <div class=" col-12 col-sm-12 col-md-12 col-lg-4  my-4">
+                    <form>
+                        <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Suscríbete a nuestro boletín</font></font></h5>
+                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resumen mensual de nuestras novedades y novedades.</font></font></p>
+                        <div class="d-flex w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección de correo electrónico</font></font></label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Dirección de correo electrónico">
+                        <button class="btn btn-primary" type="button"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Suscribir</font></font></button>
+                        </div>
+                    </form>
+                </div>
           </div>
-      
-          <div class="d-flex justify-content-between py-4 my-4 border-top">
-            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2024 FLHIS, Inc. Todos los derechos reservados.</font></font></p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-            </ul>
-          </div>
+
+          <div class="row d-flex  py-4 my-4 border-top">
+            <p class="col-12 col-sm-12 col-md-7 col-lg-6 d-flex justify-content-star ">
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">© 2024 FLHIS, Inc. Todos los derechos reservados.</font>
+                </font>
+            </p>
+            <div class="col-12 col-sm-12 col-md-5 col-lg-6 d-flex icons ">
+                    
+                <div class="ico col-2">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5 stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-instagram'></i>
+                </div>
+                <div class="ico col-2">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-facebook-circle'></i>
+                </div>
+                <div class="ico col-2">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-whatsapp'></i>
+                </div>
+                <div class="ico col-2">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-x' >
+                        <!-- Imagen 1 -->
+                        <img src="img/iconos/x-negro.png" alt="Img 1" class="imagen" id="img1" heigth="32" width="32">
+
+                        <!-- Imagen 2 (inicialmente oculta) -->
+                        <img src="img/iconos/x.png" heigth="37" width="37" alt="Img 2" class="imagen" id="img2" style=" display: none; ">
+                        <script>
+                            // Obtener referencias a las imágenes
+                            const img1 = document.getElementById('img1');
+                            const img2 = document.getElementById('img2');
+
+                            // Evento al pasar el cursor sobre la imagen 1
+                            img1.addEventListener('mouseover', () => {
+                                // Ocultar imagen 1
+                                img1.style.display = 'none';
+                                // Mostrar imagen 2
+                                img2.style.display = 'block';
+                            });
+
+                            // Evento al quitar el cursor de la imagen 2
+                            img2.addEventListener('mouseout', () => {
+                                // Mostrar imagen 1
+                                img1.style.display = 'block';
+                                // Ocultar imagen 2
+                                img2.style.display = 'none';
+                            });
+                        </script>
+                    
+                    </i>
+                </div>
+                <div class="ico col-2">
+                    <svg >
+                        <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-youtube'></i>
+                </div>
+                <div class="ico col-2">
+                    <svg>
+                        <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                    </svg>
+                    <i class='bx bxl-tiktok'></i>
+                </div>   
+            </div>    
+        </div>   
         </footer>
     </div>
     

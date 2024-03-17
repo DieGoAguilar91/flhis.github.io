@@ -43,6 +43,15 @@ p{
     height: 40px;
     
 }
+/* Iconos del footer */
+.icons{
+    justify-content: end;
+}
+.icons svg{
+    width: 40px;
+    height: 40px;
+    
+}
 
 .ico:hover {
     background-color: #e60073;
@@ -125,6 +134,9 @@ svg circle {
     visibility: hidden;
     height: 0;
     width: 0;
+}
+.icons{
+    justify-content: start;
 }
 }
 
