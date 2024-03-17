@@ -21,7 +21,7 @@ p{
 
 /* Redes Sociales */
 .iconos{
-    height: 40px; 
+    height: 50px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@ p{
     position: relative;
     width: 40px;
     height: 40px;
-    margin: 7px;
+    margin: 5px;
     border-radius: 50%;
     transition: all .8s;
     cursor: pointer;
@@ -41,11 +41,14 @@ p{
 .iconos svg{
     width: 40px;
     height: 40px;
+    
 }
 
 .ico:hover {
     background-color: #e60073;
     box-shadow:  0 0 10px #e60073 ;
+   
+   
 }
 
 .ico:hover:nth-child(2) {
@@ -72,27 +75,57 @@ p{
     box-shadow:  0 0 20px black;
 }
 .ico i {
-    color: #fff;
+    color: black;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 1.9rem;
 }
-
+.ico:hover i{
+color: white;
+}
 svg circle {
-    stroke-dasharray: 70;
+    stroke: black; 
+    stroke-dasharray: 80;
     transition: all .8s ease-in-out;
 }
 
 .ico:hover circle {
     stroke-dasharray: 110;
+    stroke: white;
 }
 
 @media (max-width: 992px) {
     p{
         font-size: px;
     }
+
+    .iconos{ 
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+   .iconos i{ 
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    }
+   .iconos .ico{ 
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+   .iconos svg{
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+   .iconos svg circle{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
 }
 
 @media (max-width: 768px) {

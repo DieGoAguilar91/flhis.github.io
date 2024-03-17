@@ -25,210 +25,247 @@
 <body>
 <div class="container-fluid  ">
     <!--  Navbar de inicio-->
-    <div class="row shadow-lg ">
-        <div class="col-4 col-md-4 col-lg-4  encabezado1"> 📞 3106968428 <a href="" class="mx-3">Contacto</a> | <a href="" class="mx-3">Blog</a> </div>
-        <div class="col-4 col-md-4 col-lg-4 text-center encabezado1">
-            <style>
-                /* Estilo para el mensaje */
-                #mensaje {
-                    font-size: 16px;
-                    font-weight: bold;
-                    text-align: center;
-                    opacity: 0; /* Inicialmente oculto */
-                    transition: opacity 1s ease-in-out;
-                }
-            </style>
-             <div id="mensaje">Envíos Gratis a Tunja</div>
-
-             <script>
-                 // Array con los mensajes
-                 const mensajes = [
-                     "Envíos GRATIS en Tunja capital a partir de $10.000",
-                     "Entrega en 24 o 48 horas"
-                 ];
-         
-                 // Elemento del DOM para mostrar el mensaje
-                 const mensajeElement = document.getElementById("mensaje");
-         
-                 // Índice actual del mensaje
-                 let indiceMensaje = 0;
-         
-                 // Función para cambiar el mensaje cada 5 segundos
-                 function cambiarMensaje() {
-                     // Aplica la transición de difuminado al ocultar
-                     mensajeElement.style.opacity = "0";
-         
-                     setTimeout(() => {
-                         // Cambia el mensaje
-                         mensajeElement.textContent = mensajes[indiceMensaje];
-         
-                         // Incrementa el índice (circular)
-                         indiceMensaje = (indiceMensaje + 1) % mensajes.length;
-         
-                         // Aplica la transición de difuminado al mostrar
-                         mensajeElement.style.opacity = "1";
-                     }, 1000);
-                 }
-         
-                 // Inicializa el cambio de mensajes
-                 cambiarMensaje();
-                 setInterval(cambiarMensaje, 5000); // Cambia cada 5 segundos
-             </script>
-        </div>
-        <div class="col-4 col-md-4 col-lg-4 text-center encabezado1">
-            <div class="iconos">
-               
-                <div class="ico">
-                    <svg>
-                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
-                    </svg>
-                    <i class='bx bxl-instagram'></i>
-                </div>
-                <div class="ico">
-                    <svg>
-                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
-                    </svg>
-                    <i class='bx bxl-facebook-circle'></i>
-                </div>
-                <div class="ico">
-                    <svg>
-                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
-                    </svg>
-                    <i class='bx bxl-whatsapp'></i>
-                </div>
-                <div class="ico">
-                    <svg>
-                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
-                    </svg>
-                    <i class='bx bxl-x' > <img src="../img/iconos/x.png" heigth="40" width="40" alt=""></i>
-                </div>
-                <div class="ico">
-                    <svg >
-                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
-                    </svg>
-                    <i class='bx bxl-youtube'></i>
-                </div>
-                <div class="ico">
-                    <svg>
-                        <circle cx="20" cy="20" r=17.5 stroke="white" stroke-width="2" fill="none" ></circle>
-                    </svg>
-                    <i class='bx bxl-tiktok'></i>
-                </div>   
-            </div>
-        </div>
-       
+    <div class="row menu-total">
+        <div class="col-12 menu">
+            <div class="row bg-white">
+                <div class="col-4 col-md-4 col-lg-4  encabezado1"> 📞 3106968428 <a href="" class="mx-3">Contacto</a> | <a href="" class="mx-3">Blog</a> </div>
+                <div class="col-12 col-sm-12  mx-0 my-0 col-md-12 col-lg-4 text-center mensaje-auto">
+                    <style>
+                        /* Estilo para el mensaje */
+                        #mensaje {
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-align: center;
+                            opacity: 0; /* Inicialmente oculto */
+                            transition: opacity 1s ease-in-out;
+                        }
+                    </style>
+                     <div id="mensaje">Envíos Gratis a Tunja</div>
         
-        <div class="col-4 col-sm-3 col-md-3 col-lg-4  align-content-center d-flex justify-content-center encabezado2">
-            <img class="circulo-1" src="img/banner.png"  width="90%">
-            
-        </div>
-        <div class="col-8 col-sm-9 col-md-9 col-lg-8 text-center encabezado2">
-            <div class="row d-flex mx-auto my-4 align-content-center align-items-center justify-content-center  ">
-                <div class="col-4 col-sm-4 col-md-6 col-lg-6 text-center">
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Buscar producto..." aria-label="Search">
-                        <button class="text-dark btn btn-outline-success bg-success" type="submit">Buscar</button>
-                    </form>  
+                     <script>
+                         // Array con los mensajes
+                         const mensajes = [
+                             "Envíos GRATIS en Tunja capital a partir de $10.000",
+                             "Entrega en 24 o 48 horas"
+                         ];
+                 
+                         // Elemento del DOM para mostrar el mensaje
+                         const mensajeElement = document.getElementById("mensaje");
+                 
+                         // Índice actual del mensaje
+                         let indiceMensaje = 0;
+                 
+                         // Función para cambiar el mensaje cada 5 segundos
+                         function cambiarMensaje() {
+                             // Aplica la transición de difuminado al ocultar
+                             mensajeElement.style.opacity = "0";
+                 
+                             setTimeout(() => {
+                                 // Cambia el mensaje
+                                 mensajeElement.textContent = mensajes[indiceMensaje];
+                 
+                                 // Incrementa el índice (circular)
+                                 indiceMensaje = (indiceMensaje + 1) % mensajes.length;
+                 
+                                 // Aplica la transición de difuminado al mostrar
+                                 mensajeElement.style.opacity = "1";
+                             }, 1000);
+                         }
+                 
+                         // Inicializa el cambio de mensajes
+                         cambiarMensaje();
+                         setInterval(cambiarMensaje, 5000); // Cambia cada 5 segundos
+                     </script>
                 </div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg-3 text-center"><a href="">Acceder/ Registrarse</a></div>
-                <div class="col-4 col-sm-4 col-md-3 col-lg-3  text-center">🛒 $000</div>
+                <div class="col-4 col-md-4 col-lg-4  mx-0 my-0 text-center align-content-center align-items-center justify-content-center encabezado1 redes">
+                    <div class="iconos">
+                       
+                        <div class="ico">
+                            <svg>
+                                <circle cx="20" cy="20" r=17.5 stroke-width="2" fill="none" ></circle>
+                            </svg>
+                            <i class='bx bxl-instagram'></i>
+                        </div>
+                        <div class="ico">
+                            <svg>
+                                <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                            </svg>
+                            <i class='bx bxl-facebook-circle'></i>
+                        </div>
+                        <div class="ico">
+                            <svg>
+                                <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                            </svg>
+                            <i class='bx bxl-whatsapp'></i>
+                        </div>
+                        <div class="ico">
+                            <svg>
+                                <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                            </svg>
+                            <i class='bx bxl-x' > <img src="../img/iconos/x.png" heigth="40" width="40" alt=""></i>
+                        </div>
+                        <div class="ico">
+                            <svg >
+                                <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                            </svg>
+                            <i class='bx bxl-youtube'></i>
+                        </div>
+                        <div class="ico">
+                            <svg>
+                                <circle cx="20" cy="20" r=17.5  stroke-width="2" fill="none" ></circle>
+                            </svg>
+                            <i class='bx bxl-tiktok'></i>
+                        </div>   
+                    </div>
+                </div>
+
+                <div class="col-4 col-sm-3 col-md-3 col-lg-4   mx-0 my-0 align-content-center d-flex justify-content-center encabezado2">
+                    <img class="circulo-1" src="img/banner.png"  width="90%">    
+                </div>
+                <div class="col-8 col-sm-9 col-md-9 col-lg-8 text-center  mx-0 my-0 encabezado2">
+                    <div class="row d-flex mx-auto my-4 align-content-center align-items-center justify-content-center  ">
+                        <div class="col-4 col-sm-4 col-md-6 col-lg-6 text-center">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Buscar producto..." aria-label="Search">
+                                <button class="text-dark btn btn-outline-success bg-success" type="submit">Buscar</button>
+                            </form>  
+                        </div>
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3 text-center"><a href="">Acceder/ Registrarse</a></div>
+                        <div class="col-4 col-sm-4 col-md-3 col-lg-3  text-center">🛒 $000</div>
+                    </div>
+                </div>
+
+                <nav class="col-12 navbar navbar-expand-lg navbar-light mx-0 my-0 "> <!-- fixed-top -->
+                    <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">FLHIS</a>
+                      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Tienda
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                  <li><a class="dropdown-item" href="#">Frutas</a></li>
+                                  <li><a class="dropdown-item" href="#">Verduras</a></li>
+                                  <li><a class="dropdown-item" href="#">Abarrotes</a></li>
+                                  <li><a class="dropdown-item" href="#">Carnes</a></li>
+                                  <li><a class="dropdown-item" href="#">Lacteos</a></li>
+                                  <!-- <li>
+                                    <hr class="dropdown-divider">
+                                  </li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                </ul>
+                              </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Ofertas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Catalogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contactanos</a>
+                            </li>
+                          </ul>
+                        
+                        </div>
+                      </div>
+                    </div>
+                </nav>
             </div>
         </div>
-
 
         <!-- Menu -->
-        <nav class="navbar navbar-expand-lg navbar-light "> <!-- fixed-top -->
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                    <span class="navbar-toggler-icon"></span>
-              </button>
-              <a class="navbar-brand" href="#">FLHIS</a>
-              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Tienda
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                          <li><a class="dropdown-item" href="#">Frutas</a></li>
-                          <li><a class="dropdown-item" href="#">Verduras</a></li>
-                          <li><a class="dropdown-item" href="#">Abarrotes</a></li>
-                          <li><a class="dropdown-item" href="#">Carnes</a></li>
-                          <li><a class="dropdown-item" href="#">Lacteos</a></li>
-                          <!-- <li>
-                            <hr class="dropdown-divider">
-                          </li>
-                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                        </ul>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Ofertas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Catalogo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contactanos</a>
-                    </li>
-                  </ul>
-                
-                </div>
-              </div>
-            </div>
-        </nav>
+        <style>
+            /* Estilo para la barra de navegación (navbar) */
+            .menu {
+             
+            top: -300px; /* Inicialmente oculto arriba */
+            left: 0;
+            width: 100%;
+            transition: top 0.3s ease; /* Transición suave */
+            z-index: 100;
+            }
+            .menu.mostrar {
+                z-index: 100;
+                position: fixed;
+                top: 0px;  
+            }
+        .mensaje-auto.ocultar {
+                visibility: hidden;
+                height: 0;
+                width: 0;
+                padding: 0;
+            }
+            .encabezado1.ocultar {
+                visibility: hidden;
+                height: 0;
+                width: 0;
+                padding: 0;
+            }
+            .redes.ocultar {
+                visibility: hidden;
+                height: 0;
+                width: 0;
+                padding: 0;
+            }
+        </style>
         
-        <!-- Modal de inio de secion -->
-        <!-- 
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-            Launch static backdrop modal
-        </button>
+        <script>
+            // JavaScript para mostrar la barra de navegación al deslizar hacia abajo
+            window.addEventListener('scroll', function() {
+                const menu = document.querySelector('.menu ');
+                if (window.scrollY >= 500) {
+                    menu.classList.add('mostrar');
+                } else {
+                    menu.classList.remove('mostrar');
+                }
+            });
+
+            window.addEventListener('scroll', function() {
+                const ocultar = document.querySelector('.mensaje-auto');
+                if (window.scrollY >= 500) {
+                    ocultar.classList.add('ocultar');
+                } else {
+                    ocultar.classList.remove('ocultar');
+                }
+            });
+
+            window.addEventListener('scroll', function() {
+                const ocultar = document.querySelector('.encabezado1');
+                if (window.scrollY >= 500) {
+                    ocultar.classList.add('ocultar');
+                } else {
+                    ocultar.classList.remove('ocultar');
+                }
+            });
+                window.addEventListener('scroll', function() {
+                const ocultar = document.querySelector('.redes');
+                if (window.scrollY >= 500) {
+                    ocultar.classList.add('ocultar');
+                } else {
+                    ocultar.classList.remove('ocultar');
+                }
+            });
+        </script>
         
 
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                ...
-                </div>
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Understood</button>
-                </div>
-            </div>
-            </div>
-        </div> -->
-
-
-        <!-- Carrito de compra ¡importante -->
-        <!-- <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Enable both scrolling & backdrop</button>
-
-        <div class="offcanvas offcanvas-start col-5" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <p>Try scrolling the rest of the page to see this option in action.</p>
-        </div>
-        </div> -->
     
     </div>
 
@@ -960,9 +997,9 @@
 
     <!--  Pie de pagina -->
     <div class="container-fluid bg-white">
-        <footer class="py-5">
+        <footer class="py-4">
           <div class="row">
-            <div class="col-2">
+            <div class="col-6 col-sm-6 col-md-2 col-lg-2">
               <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
@@ -973,7 +1010,7 @@
               </ul>
             </div>
       
-            <div class="col-2">
+            <div class="col-6 col-sm-6 col-md-2 col-lg-2">
               <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
@@ -984,7 +1021,7 @@
               </ul>
             </div>
       
-            <div class="col-2">
+            <div class="col-6 col-sm-6 col-md-2 col-lg-2">
               <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
@@ -994,8 +1031,19 @@
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
               </ul>
             </div>
+
+            <div class="col-6 col-sm-6 col-md-2 col-lg-2">
+                <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sección</font></font></h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hogar</font></font></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Características</font></font></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Preguntas frecuentes</font></font></a></li>
+                  <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acerca de</font></font></a></li>
+                </ul>
+              </div>
       
-            <div class="col-4 offset-1">
+            <div class=" col-12 col-sm-12 col-md-4 col-lg-4 ">
               <form>
                 <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Suscríbete a nuestro boletín</font></font></h5>
                 <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Resumen mensual de nuestras novedades y novedades.</font></font></p>
