@@ -100,7 +100,9 @@ main .sec .content p {
   
 }
 @media (max-width:400px) {
-  
+  main section {
+    height: 70vh;
+  }
 main section img {
 
   width: 100%;
