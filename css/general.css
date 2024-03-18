@@ -14,9 +14,18 @@
     font-style: normal;   
 }
 p{
-    font-size:20px ;
+    font-size:clam(12px, 4vw, 32px);
 }
-
+.icon{
+    width: 30px;
+    height:  30px;
+}
+.redondear-1{
+    border-radius: 20px;
+}
+.circulo-1{
+    border-radius: 100px;
+}
 
 
 /* Redes Sociales */
@@ -106,9 +115,7 @@ svg circle {
 }
 
 @media (max-width: 992px) {
-    p{
-        font-size: px;
-    }
+
 
     .iconos{ 
         visibility: hidden;
@@ -141,14 +148,17 @@ svg circle {
 }
 
 @media (max-width: 768px) {
-    p{
-        font-size: 17px;
+   
+    .icon{
+        width: 35px;
+        height:  35px;
     }
 }
 @media (max-width:576px) {
-    
-    p  {
-        font-size: 15px;
+
+    .icon{
+        width: 35px;
+        height:  35px;
     }
 }
 

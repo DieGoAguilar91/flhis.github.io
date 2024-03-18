@@ -26,13 +26,26 @@
 
 .navbar{  
     border-top: 1px solid rgb(212, 212, 212);
-
-    font-size: larger;
     color:black;
 }
 
 .menu-total{
 height: 205px;
+}
+.flhis{
+    text-decoration: none;
+    color: black;
+}
+.flhis:hover{
+    color: black;
+}
+.navbar-brand{
+display: flex;
+} 
+.cesta, .usuario{
+    text-decoration: none;
+    visibility: hidden;
+   
 }
 
 /* y 778px */
@@ -59,6 +72,17 @@ height: 205px;
     .navbar{  
         display: flex;
         right: 0px;
+    }
+    .flhis{
+        visibility: hidden;
+    }
+    .navbar-brand{
+        gap: 15px;
+    }
+    .cesta, .usuario{
+        text-decoration: none;
+        visibility: visible;
+        
     }
 
 }
