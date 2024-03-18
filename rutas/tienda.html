@@ -312,11 +312,40 @@
       
         <main>  
             <section>  
-                <img src="../img/fondos/eje_cafetero.jpg" id="bg" />
+                <style>
+                    /* Estilo para la imagen de fondo */
+                    #bg {
+                        position: absolute;
+                        background-size: cover;
+                        width: 100%;
+                        height: 160vh;
+                    }
+                </style>
+              <div id="bg"></div>
+              <script>
+                // Función para cambiar la imagen cuando el ancho de la pantalla sea menor o igual a 400 píxeles
+                function cambiarImagen() {
+                    const bgElement = document.getElementById('bg');
+                    const windowWidth = window.innerWidth;
+        
+                    if (windowWidth <= 600) {
+                        // Cambia la ruta de la imagen según tus necesidades
+                        bgElement.style.backgroundImage = 'url("../img/fondos/vertical.jpg")';
+                    } else {
+                        // Restaura la imagen original
+                        bgElement.style.backgroundImage = 'url("../img/fondos/eje_cafetero.jpg")';
+                    }
+                }
+        
+                // Ejecuta la función al cargar la página y cuando se redimensiona la ventana
+                window.addEventListener('load', cambiarImagen);
+                window.addEventListener('resize', cambiarImagen);
+            </script>
+
                 <h2 id="text">Fruver La Huerta</h2>
                 <img src="../img/fondos/frutas.png" id="man" class="personaje" />
-                <img src="../img/recursos/clouds_1.png" id="clouds_1" />
-                <img src="../img/recursos/clouds_2.png" id="clouds_2" />
+                <img src="../img/recursos/clouds_1.png" id="clouds_1"/>
+                <img src="../img/recursos/clouds_2.png" id="clouds_2"/>
             </section>
         </main>
         <div id="lastray" class="element"></div>

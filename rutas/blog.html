@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Estilo para la imagen de fondo */
+        #bg {
+            position: absolute;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="bg"></div>
+    <h2 id="text">Fruver La Huerta</h2>
+
+    <script>
+        // Función para cambiar la imagen cuando el ancho de la pantalla sea menor o igual a 400 píxeles
+        function cambiarImagen() {
+            const bgElement = document.getElementById('bg');
+            const windowWidth = window.innerWidth;
+
+            if (windowWidth <= 600) {
+                // Cambia la ruta de la imagen según tus necesidades
+                bgElement.style.backgroundImage = 'url("../img/fondos/eje_cafetero.jpg")';
+            } else {
+                // Restaura la imagen original
+                bgElement.style.backgroundImage = 'url("../img/fondos/eje_cafetero2.jpg")';
+            }
+        }
+
+        // Ejecuta la función al cargar la página y cuando se redimensiona la ventana
+        window.addEventListener('load', cambiarImagen);
+        window.addEventListener('resize', cambiarImagen);
+    </script>
+</body>
+</html>
+

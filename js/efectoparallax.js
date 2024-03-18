@@ -10,7 +10,7 @@ gsap.to("#bg",{
     scrollTrigger:{
         scrub:1
     },
-    scale:1.5
+    scale:1.4
 })
 gsap.to("#man",{
     scrollTrigger:{
