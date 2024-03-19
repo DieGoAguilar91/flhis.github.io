@@ -100,9 +100,7 @@ main .sec .content p {
   
 }
 @media (max-width:400px) {
-  main section {
-    height: 70vh;
-  }
+
 main section img {
 
   width: 100%;
@@ -112,14 +110,14 @@ main section img {
   pointer-events: none;
 }
 main section .personaje {
-     width: 85%;
-     height: 85%;
+     width: 90%;
+     height: 90%;
      top: 25%;
-  left: 10%;
+  left: 5%;
 }
 main section #text {
   bottom: 30px;
-  font-size: 11vw;
+  font-size: 13vw;
 }
 
 }
