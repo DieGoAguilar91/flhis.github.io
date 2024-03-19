@@ -26,6 +26,10 @@ p{
 .circulo-1{
     border-radius: 100px;
 }
+.verde{
+    color: #2E7D32;
+    text-decoration: none;
+}
 
 
 /* Redes Sociales */
@@ -124,16 +128,17 @@ svg circle {
 }
 /* Productos en General */
 .card-producto {
-   
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
     text-align: center;
-   
-    
     content: center;
 }
+.card-producto .card-text{
+    color: rgb(92, 90, 90);
+}
+
 .card .card-img-top{
     width: 150px;
     height: 150px;

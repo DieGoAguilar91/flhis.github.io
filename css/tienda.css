@@ -1,1 +1,14 @@
 
+.filtros{
+    background-color: #F4F6F6 ;
+    padding: 10px;
+    border:1px  solid rgb(207, 207, 207);
+}
+
+.parrafo{
+    font-size: 16px;
+}
+.tema{
+    padding-left: 50px;
+    border-left: 3px solid rgb(255, 208, 0);
+}
