@@ -158,6 +158,40 @@ svg circle {
     display: grid;
 }
 
+/* Seccion de categorias inicio */
+.contenedor-imagen .imagen{
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+}
+.contenedor-imagen .espacio{
+ 
+    height: 150px;
+}
+
+
+.contenedor-imagen {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagen {
+    transition: transform 0.3s ease;
+}
+
+.contenedor-imagen:hover .imagen {
+    transform: scale(1.2); /* Ajusta el valor para controlar el nivel de zoom */
+}
+.contenedor-imagen .card-title{
+    color: white;
+    text-shadow: 1px 1px 2px green;
+}
+.contenedor-imagen .card-text{
+    color: white;
+    text-shadow: 1px 1px 2px green;
+}
+
+
 /* Seccion de categorias */
 .card-cat {
     background-color :#81C784;
@@ -195,7 +229,7 @@ svg circle {
 
 
 @media (max-width: 992px) {
-
+   
 
     .iconos{ 
         visibility: hidden;
@@ -245,6 +279,14 @@ svg circle {
         width: 90px;
         height: 90px;
       
+    }
+    .contenedor-imagen .imagen{
+        
+        height: 210px;
+    }
+    .contenedor-imagen .espacio{
+     
+        height: 120px;
     }
 }
 

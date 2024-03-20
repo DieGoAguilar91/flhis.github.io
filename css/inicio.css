@@ -14,26 +14,6 @@
     bottom: 100px;
 }
 
-.contenedor-imagen {
-    position: relative;
-    overflow: hidden;
-}
-
-.imagen {
-    transition: transform 0.3s ease;
-}
-
-.contenedor-imagen:hover .imagen {
-    transform: scale(1.2); /* Ajusta el valor para controlar el nivel de zoom */
-}
-.contenedor-imagen .card-title{
-    color: white;
-}
-.contenedor-imagen .card-text{
-    color: white;
-}
-
-
 
 
 
