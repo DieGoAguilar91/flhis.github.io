@@ -231,6 +231,7 @@ svg circle {
 
 
 @media (max-width: 992px) {
+
     .pading-7{
         padding: 0 30px 0 30px ;
         margin-top: 0;
@@ -267,6 +268,18 @@ svg circle {
 }
 
 @media (max-width: 768px) {
+    .carusel-promociones{
+        height: 50px;
+    }
+    .carousel-control-prev-icon{
+        visibility: hidden;
+    }
+    .carousel-control-next-icon{
+        visibility: hidden;
+    }
+    .carousel-indicators{
+        visibility: hidden;
+    }
    
     .icon{
         width: 35px;
