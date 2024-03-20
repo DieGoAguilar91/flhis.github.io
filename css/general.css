@@ -30,7 +30,9 @@ p{
     color: #2E7D32;
     text-decoration: none;
 }
-
+.pading-7{
+    padding: 0 10% 0 10% ;
+}
 
 /* Redes Sociales */
 .iconos{
@@ -229,7 +231,10 @@ svg circle {
 
 
 @media (max-width: 992px) {
-   
+    .pading-7{
+        padding: 0 30px 0 30px ;
+        margin-top: 0;
+    }
 
     .iconos{ 
         visibility: hidden;
@@ -287,6 +292,9 @@ svg circle {
     .contenedor-imagen .espacio{
      
         height: 120px;
+    }
+    .pading-7{
+        padding: 0 10px 0 10px ;
     }
 }
 
