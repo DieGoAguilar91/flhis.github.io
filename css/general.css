@@ -138,6 +138,18 @@ svg circle {
 }
 .carousel-item p{
     color: black;
+    
+}
+.carousel-indicators [data-bs-target] {
+    background-color: black;
+}
+.carousel-control-prev-icon {
+    background-color: black;
+    border-radius: 20px;
+}
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 20px;
 }
 
 /* Productos en General */
