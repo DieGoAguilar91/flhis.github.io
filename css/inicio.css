@@ -19,10 +19,6 @@
 
 
 @media (max-width: 992px) {
-    .carousel{
-        margin-top: 50px;
-    }
-   
     .seccion-1{
         height:450px;
     }
@@ -78,10 +74,6 @@
         font-size: 1px;
         margin-top: 20px;
     }
-    .imagen-cambiante {
-        width: 90px;
-        height: 90px;
-      
-    }
+  
 }
   

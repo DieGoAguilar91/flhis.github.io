@@ -280,6 +280,7 @@ svg circle {
 }
 
 @media (max-width: 768px) {
+    
     .carusel-promociones{
         height: 50px;
     }
@@ -299,7 +300,11 @@ svg circle {
     }
 }
 @media (max-width:576px) {
-
+    .imagen-cambiante {
+        width: 90px;
+        height: 90px;
+      
+    }
     .icon{
         width: 35px;
         height:  35px;

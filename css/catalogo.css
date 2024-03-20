@@ -1,0 +1,35 @@
+#anuncio{
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+}
+.presupuesto-empresa .card-title{
+    font-size: 25px;
+}
+.presupuesto-empresa .card-text{
+    font-size: 20px;
+}
+@media (max-width: 649px) {
+  
+    .presupuesto-empresa{
+        font-size: 1px;
+        padding: 0 20px 0 ;
+    }
+    .presupuesto-empresa .card-title{
+        font-size: 14px;
+    }
+    .presupuesto-empresa .card-text{
+        font-size: 12px;
+    }
+    .presupuesto-empresa a{
+        font-size: 11px;
+    }
+    #anuncio{
+        background-size: cover;
+        width: 100%;
+        height: 35vh;
+    }
+
+
+}
+
