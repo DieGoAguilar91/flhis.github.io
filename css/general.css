@@ -126,6 +126,18 @@ svg circle {
 .imagen-cambiante:hover {
     transform: scale(1.1); /* Cambia el tamaño de la imagen al pasar el cursor */
 }
+/* Carrusel */
+.carousel{
+    padding: 0px;
+    margin: 0px;
+}
+.carousel-item h5{
+    color: black;
+}
+.carousel-item p{
+    color: black;
+}
+
 /* Productos en General */
 .card-producto {
     display: flex;

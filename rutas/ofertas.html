@@ -7,12 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap5.1.3/css/bootstrap-grid.css">
     <title>Fruver la Huerta</title>
-    <link rel="icon" href="img/logo.ico" type="image/x-icon">
+    <link rel="icon" href="../img/logo.ico" type="image/x-icon">
 
     <!--CSS estilos propios -->
-    <link rel="stylesheet" href="css/tienda.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/ofertas.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/general.css">
 
     <!-- Links Externos -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
@@ -104,10 +105,10 @@
                             </svg>
                             <i class='bx bxl-x' >
                                 <!-- Imagen 1 -->
-                                <img src="img/iconos/x-negro.png" alt="Imagen 1" class="imagen" id="imagen1" heigth="32" width="32">
+                                <img src="../img/iconos/x-negro.png" alt="Imagen 1" class="imagen" id="imagen1" heigth="32" width="32">
 
                                 <!-- Imagen 2 (inicialmente oculta) -->
-                                <img src="img/iconos/x.png" heigth="37" width="37" alt="Imagen 2" class="imagen" id="imagen2" style=" display: none; ">
+                                <img src="../img/iconos/x.png" heigth="37" width="37" alt="Imagen 2" class="imagen" id="imagen2" style=" display: none; ">
                                 
                                 <script>
                                     // Obtener referencias a las imágenes
@@ -150,7 +151,7 @@
                 </div>
 
                 <div class="col-4 col-sm-3 col-md-3 col-lg-4   mx-0 my-0 align-content-center d-flex justify-content-center encabezado2">
-                    <img class="circulo-1" src="img/banner.png"  width="90%">    
+                    <img class="circulo-1" src="../img/banner.png"  width="90%">    
                 </div>
                 <div class="col-8 col-sm-9 col-md-9 col-lg-8 text-center  mx-0 my-0 encabezado2">
                     <div class="row d-flex mx-auto my-4 align-content-center align-items-center justify-content-center  ">
@@ -162,7 +163,7 @@
                         </div>
                         <div class="col-4 col-sm-4 col-md-3 col-lg-3 text-center"><a href="login.html"> Acceder/ Registrarse</a></div>
                         <div class="col-4 col-sm-4 col-md-3 col-lg-3  text-center">
-                            <a href="#" class="btn btn-warning"><img src="img/iconos/carrito-de-compras.png" class="icon" alt="">  000 $</a> 
+                            <button type="submit" class="btn btn-warning "><img src="../img/iconos/carrito-de-compras.png" class="icon" alt="">  000 $</button>
                         </div>
                     </div>
                 </div>
@@ -174,8 +175,8 @@
                       </button>
                       <div class="navbar-brand">
                             <a href="" class="flhis">FLHIS </a>
-                            <a href="" class="cesta"><img src="img/iconos/carrito-de-compras.png" class="icon" alt=""></a>
-                            <a href="" class="usuario"><img src="img/iconos/usuario.png" class="icon" alt=""></a>        
+                            <a href="" class="cesta"><img src="../img/iconos/carrito-de-compras.png" class="icon" alt=""></a>
+                            <a href="" class="usuario"><img src="../img/iconos/usuario.png" class="icon" alt=""></a>        
                       </div>
                       <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header">
@@ -185,38 +186,38 @@
                         <div class="offcanvas-body">
                           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                             <li class="nav-item">
-                              <a class="nav-link active" aria-current="page" href="#">🏠 Inicio</a>
+                              <a class="nav-link" aria-current="page" href="../index.html">🏠 Inicio</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle active" href="tienda.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     🏪 Tienda
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                  <li><a class="dropdown-item" href="#">🍇 Frutas</a></li>
-                                  <li><a class="dropdown-item" href="#">🥑 Verduras</a></li>
-                                  <li><a class="dropdown-item" href="#">🧃 Abarrotes</a></li>
-                                  <li><a class="dropdown-item" href="#">🥩 Carnes</a></li>
-                                  <li><a class="dropdown-item" href="#">🧀 Lacteos</a></li>
-                                  <!-- <li>
+                                  <li><a class="dropdown-item" href="tienda.html">🍇 Frutas</a></li>
+                                  <li><a class="dropdown-item" href="tienda.html">🥑 Verduras</a></li>
+                                  <li><a class="dropdown-item" href="tienda.html">🧃 Abarrotes</a></li>
+                                  <li><a class="dropdown-item" href="tienda.html">🥩 Carnes</a></li>
+                                  <li><a class="dropdown-item" href="tienda.html">🧀 Lacteos</a></li>
+                                  <li>
                                     <hr class="dropdown-divider">
                                   </li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                                  <li><a class="dropdown-item" href="tienda.html">Ingresar a la tienda</a></li>
                                 </ul>
-                              </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">🎁 Ofertas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">📖 Catalogo</a>
+                              <a class="nav-link" href="ofertas.html">🎁 Ofertas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">📒 Blog</a>
+                                <a class="nav-link" href="catalogo.html">📖 Catalogo</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">👨‍🌾 Nosotros</a>
+                                <a class="nav-link" href="blog.html">📒 Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">📞 Contactanos</a>
+                                <a class="nav-link" href="nosotros.html">👨‍🌾 Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactanos.html">📞 Contactanos</a>
                             </li>
                           </ul>
                         
@@ -305,726 +306,202 @@
     
     </div>
 
-    <!--  Carrusel -->
+<!-- Carrusel Promosiones -->
+<div class="carusel-promociones">
+
+</div>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/carrusel/image1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            <h5>First slide label</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="img/carrusel/image2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            <h5>Second slide label</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="img/carrusel/image3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <img src="img/carrusel/image4.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-            <h5>Third slide label</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-            </div>
-        </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-        </button>
+    <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
     </div>
-
+    <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="../img/ofertas/arandanos.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="../img/ofertas/fresas.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="../img/ofertas/manzanasrojas.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h5>T</h5>
+        <p></p>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="../img/ofertas/acelgas.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p></p>
+        </div>
+    </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+    </button>
+    </div>
     <!-- Contenido de la pagina -->
-    <!--  Seccion 1 -->
-    <div class="row my-3" >
-        <div class="col-12 ">
-            <h1 class="text-center py-3 fw-bold ">Nuestros productos</h1>
-            <p class="">
-                En Fruver La Huerta, nos enorgullece ofrecerte lo mejor de la naturaleza en cada bocado. Nuestros productos son cultivados con amor y cuidado, directamente desde la huerta hasta tu mesa.
-                ¿Qué encontrarás en nuestro rincón de delicias? ¡Déjanos presentarte algunos de nuestros tesoros frescos:
-            </p>
-        </div> 
-        <div class="col-12 seccion-1">
-            <div class="row align-content-center d-flex justify-content-center">
-                <div class="col-12 align-content-center d-flex justify-content-center pading-7 ">
-                    <img src="img/Inicio-recursos/canasta-larga.jpg" class="redondear-1 w-100" alt="">
-                </div>
-                <div class="col-9 align-content-center d-flex justify-content-center redondear-1 position-top ">
-                    <div class="text-center shadow-lg p-3 mb-5 bg-white redondear-1 " >
-                        <h2>Online, sencillo y sabroso</h2>
-                        <p class=""  >
-                            Fruta y verdura del campo a la mesa. En el Fruver la Huerta ofrecemos multitud
-                            de productos saludables, desde gran variedad de frutas y verduras, como hierbas aromáticas,
-                            productos gourmets  y magníficas cestas de frutas para regalar o para empresas. Un regalo saludable y a buen precio.
-                        </p>
-                    </div>
-                    
+    <!--Seccion 1 -->
+    <div class="row">
+    <div class="col-12 my-3 oferta">
+        <h2>¡ Grandes descuentos en Fruver La Huerta !</h2>
+        <img src="../img/ofertas/frutas.png" class="w-100" alt="">
+    </div>
+  </div>
+  <!--Seccion 2 -->
+    <div class="row align-content-center d-flex justify-content-center">
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
+        <div class="row p-2"> 
+            <div class="card p-0 mx-0 contenedor-imagen"> <!-- Esta clase debes poner border radius = card -->
+                <img src="../img/Categorias/frutas.jpg" class="card-img imagen" height="270px">
+                <div class="card-img-overlay">
+                    <br> <br> <br> <br> <br> <br> <br>
+                <h5 class="card-title">Frutas</h5>
+                <p class="card-text">73 Productos</p>
                 </div>
             </div>
         </div>
     </div>
-        
-    <!--Seccion 2 -->
-    <div class="row p-1 align-content-center d-flex justify-content-center">
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-2"> 
-                <div class="card p-0 mx-0 contenedor-imagen"> <!-- Esta clase debes poner border radius = card -->
-                    <img src="img/Categorias/frutas.jpg" class="card-img imagen" height="270px">
-                    <div class="card-img-overlay">
-                        <br> <br> <br> <br> <br> <br> <br>
-                    <h5 class="card-title">Frutas</h5>
-                    <p class="card-text">73 Productos</p>
-                    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
+        <div class="row p-2"> 
+            <div class="card p-0 mx-0 contenedor-imagen">
+                <img src="../img/Categorias/pimenton.jpg" class="card-img imagen" height="270px">
+                <div class="card-img-overlay">
+                    <br> <br> <br> <br> <br> <br> <br>
+                <h5 class="card-title">Verduras</h5>
+                <p class="card-text">73 Productos</p>
                 </div>
             </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-2"> 
-                <div class="card p-0 mx-0 contenedor-imagen">
-                    <img src="img/Categorias/pimenton.jpg" class="card-img imagen" height="270px">
-                    <div class="card-img-overlay">
-                        <br> <br> <br> <br> <br> <br> <br>
-                    <h5 class="card-title">Verduras</h5>
-                    <p class="card-text">73 Productos</p>
-                    </div>
-                </div>
-            </div>
-        </div>  <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-2"> 
-                <div class="card p-0 mx-0 contenedor-imagen">
-                    <img src="img/Categorias/yerbas.jpg" class="card-img imagen" height="270px">
-                    <div class="card-img-overlay">
-                        <br> <br> <br> <br> <br> <br> <br>
-                    <h5 class="card-title">Aromaticas</h5>
-                    <p class="card-text">73 Productos</p>
-                    </div>
-                </div>
-            </div>
-        </div>  
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-2"> 
-                <div class="card p-0 mx-0 contenedor-imagen">
-                    <img src="img/Categorias/abarrotes.jpg" class="card-img imagen" height="270px">
-                    <div class="card-img-overlay">
-                        <br> <br> <br> <br> <br> <br> <br>
-                    <h5 class="card-title">Abarrotes</h5>
-                    <p class="card-text">73 Productos</p>
-                    </div>
+    </div>  <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
+        <div class="row p-2"> 
+            <div class="card p-0 mx-0 contenedor-imagen">
+                <img src="../img/Categorias/yerbas.jpg" class="card-img imagen" height="270px">
+                <div class="card-img-overlay">
+                    <br> <br> <br> <br> <br> <br> <br>
+                <h5 class="card-title">Aromaticas</h5>
+                <p class="card-text">73 Productos</p>
                 </div>
             </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-2"> 
-                <div class="card p-0 mx-0 contenedor-imagen">
-                    <img src="img/Categorias/carnes.jpg" class="card-img imagen" height="270px">
-                    <div class="card-img-overlay ">
-                        <br> <br> <br> <br> <br> <br> 
-                    <h5 class="card-title ">Carnes</h5>
-                    <p class="card-text">73 Productos</p>
-                    </div>
+    </div>  
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
+        <div class="row p-2"> 
+            <div class="card p-0 mx-0 contenedor-imagen">
+                <img src="../img/Categorias/abarrotes.jpg" class="card-img imagen" height="270px">
+                <div class="card-img-overlay">
+                    <br> <br> <br> <br> <br> <br> <br>
+                <h5 class="card-title">Abarrotes</h5>
+                <p class="card-text">73 Productos</p>
                 </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-2"> 
-                <div class="card p-0 mx-0 contenedor-imagen">
-                    <img src="img/Categorias/lacteos.jpg" class="card-img imagen" height="270px">
-                    <div class="card-img-overlay ">
-                        <br> <br> <br> <br> <br> <br> 
-                        <h5 class="card-title ">Lacteos</h5>
-                        <p class="card-text ">73 Productos</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-        
-    <!--  Seccion 3 -->
-    <div class=" align-content-center d-flex justify-content-center redondear-1">
-        <div class="card  col-12 col-sm-10 col-md-9 col-lg-8 redondear-1">
-            <img src="img/Inicio-recursos/persona-mercado.png" class=" redondear-1 card-img w-100">
-            <div class="card-img-overlay text-white align-content-center d-grid justify-content-star presupuesto-empresa">
-                <h2 class="card-title ">Disfruta de fruta fresca en tu Oficina</h2>
-                <p class="card-text">¿Tienes una empresa? te proponemos un plan <br>
-                    de fruta a medida que se ajuste a sus necesidades.
-                </p> <br>
-                <a href="#" class="btn btn-success col-5 col-sm-5">Solicitar Presupuesto</a>
             </div>
         </div>
     </div>
-
-    <!-- seccion 4 -->
-    <div class="row p-4">
-        <div class="col-12 my-3">
-            <h2>Oferta de Frutas y Verduras de la semana</h2>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/aguacate.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center">
-                      <h5 class="card-title">Aguacate</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
+        <div class="row p-2"> 
+            <div class="card p-0 mx-0 contenedor-imagen">
+                <img src="../img/Categorias/carnes.jpg" class="card-img imagen" height="270px">
+                <div class="card-img-overlay ">
+                    <br> <br> <br> <br> <br> <br> 
+                <h5 class="card-title ">Carnes</h5>
+                <p class="card-text">73 Productos</p>
                 </div>
             </div>
         </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/arandanos.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center">
-                      <h5 class="card-title">Arandanos</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/jengibre.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center">
-                      <h5 class="card-title">Jengibre</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/mango.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center ">
-                      <h5 class="card-title">Mango</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
     </div>
-
-    <!--  Seccion 5 -->
-    <div class="row my-3 p-4 align-content-center d-flex justify-content-center " >
-        <div class="col-12 col-sm-7 col-md-7 col-lg-8 bg-white ">
-            <h2>Gran variedad de fruta y verdura</h2>
-            <p class="">
-                Con un solo click en las frutas y verduras online que elijas puedes crear tu propia lista de la compra personalizada con fruta y verdura de primera calidad. <br>
-                Tenemos gran variedad de fruta y verdura en nuestro catálogo. Si prefieres recibir cajas de frutas y cajas de verduras sin necesidad de seleccionarlas tu mismo también podemos ayudarte. <br>
-                
-                Disponemos de cajas de frutas y cajas de verduras preparadas que te permitirán comprar rápidamente sin necesidad de ver íntegro nuestro extenso catálogo, y sin tener que ir seleccionando uno a uno todos los productos. Nuestras cajas de frutas y verduras las preparamos con el mismo cuidado que los pedidos personalizados de nuestros clientes. Ponemos a tu disposición diferentes cajas de frutas y verduras para adaptarnos a las necesidades que puede tener cada familia. <br>
-                
-                Descubre las cajas de frutas y verduras que ponemos a tu disposición y selecciona la caja que más se adecue a tu consumo y al de tu familia, también disponemos de cajas para 2 personas o incluso de uso individual. <br>
-                       
-            </p>           
-        </div> 
-        <div class="col-12 col-sm-5 col-md-5 col-lg-4 align-content-center d-grid justify-content-center">
-           <img src="img/Inicio-recursos/canastas-productos.jpg" class="w-100" alt="">           
-        </div> 
-        <div class=" col-12 my-3"></div> 
-        <div class=" col-12 col-sm-5 col-md-5 col-lg-4 align-content-center d-grid justify-content-center">
-            <img src="img/Inicio-recursos/canasta-mazorca.jpg" class="w-100" alt="">           
-         </div> 
-        <div class="col-12 col-sm-7 col-md-7 col-lg-8 bg-white ">
-            <h2>Cestas de frutas perfectas para regalar</h2>
-            <p class="">
-                Con un solo click en las frutas y verduras online que elijas puedes crear tu propia lista de la compra personalizada con fruta y verdura de primera calidad. <br>
-                Tenemos gran variedad de fruta y verdura en nuestro catálogo. Si prefieres recibir cajas de frutas y cajas de verduras sin necesidad de seleccionarlas tu mismo también podemos ayudarte. <br>
-                
-                Disponemos de cajas de frutas y cajas de verduras preparadas que te permitirán comprar rápidamente sin necesidad de ver íntegro nuestro extenso catálogo, y sin tener que ir seleccionando uno a uno todos los productos. Nuestras cajas de frutas y verduras las preparamos con el mismo cuidado que los pedidos personalizados de nuestros clientes. Ponemos a tu disposición diferentes cajas de frutas y verduras para adaptarnos a las necesidades que puede tener cada familia. <br>
-                
-                Descubre las cajas de frutas y verduras que ponemos a tu disposición y selecciona la caja que más se adecue a tu consumo y al de tu familia, también disponemos de cajas para 2 personas o incluso de uso individual. <br>
-                       
-            </p>           
-        </div> 
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
+        <div class="row p-2"> 
+            <div class="card p-0 mx-0 contenedor-imagen">
+                <img src="../img/Categorias/lacteos.jpg" class="card-img imagen" height="270px">
+                <div class="card-img-overlay ">
+                    <br> <br> <br> <br> <br> <br> 
+                    <h5 class="card-title ">Lacteos</h5>
+                    <p class="card-text ">73 Productos</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    </div>
+    <!-- Seccion 3 -->
+    <div class="row p-5">
+        <h2>Productos de La semana</h2>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1 oferta">
+            <img src="../img/ofertas/naranjas.png" class="w-100">
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1 oferta">
+            <img src="../img/ofertas/brocoli.png" class="w-100">
+        </div>
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 p-1 oferta">
+            <img src="../img/ofertas/sandia.png" class="w-100">
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1 oferta">
+            <img src="../img/ofertas/papaspastusas.png" class="w-100">
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1 oferta">
+            <img src="../img/ofertas/manzanaverde.png" class="w-100">
+        </div>
        
     </div>
+        <!-- Seccion 4 -->
+        <div class="row p-5">
+            <h2>Supermercado</h2>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1 oferta">
+                <img src="../img/ofertas/arrozdiana.png" class="w-100">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1 oferta">
+                <img src="../img/ofertas/aceitesolisoya.png" class="w-100">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 p-1 oferta">
+                <img src="../img/ofertas/supermercado.png" class="w-100">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1 oferta">
+                <img src="../img/ofertas/lechealqueria.png" class="w-100">
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 p-1 oferta">
+                <img src="../img/ofertas/salsasbary.png" class="w-100">
+            </div>
+        </div>
 
-     <!-- seccion 6 -->
-     <div class="row align-content-center d-flex justify-content-center">
-        <div class="col-12 my-3">
-            <h2>Frutas y Verduras mas populares</h2>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/aguacate.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center">
-                      <h5 class="card-title">Aguacate</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/arandanos.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center">
-                      <h5 class="card-title">Arandanos</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/jengibre.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center">
-                      <h5 class="card-title">Jengibre</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/mango.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center">
-                      <h5 class="card-title">Mango</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/pina.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center">
-                      <h5 class="card-title">Piña</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-sm-4 col-md-3 col-lg-2 ">
-            <div class="row p-1"> 
-                <div class="card" style="width: 18rem;">
-                    <img src="img/fruver/banano.png" class="card-img-top" alt="...">
-                    <div class="card-body text-center align-content-center">
-                      <h5 class="card-title">Banano</h5>
-                      <p class="card-text">Venta por Kg <br> $9,000</p>
-                      <a href="#" class="btn btn-warning">Añadir al Carrito</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--  Seccion 7 -->
-    <div class="my-3 redondear-1 align-content-center d-flex justify-content-center" >
-        <div class="card col-12 col-sm-12 col-md-9 col-lg-8 ">
-            <img src="img/Inicio-recursos/fruver-largo.jpg" class="card-img" height="200px">
-            <div class="card-img-overlay registrate-aviso">
-                <div class="row text-white align-content-center d-flex justify-content-star">
-                    <div class="col-7">
-                        <h2 class="card-title text-white align-content-center d-grid justify-content-star ">Registrate en nuestra Tienda</h2>
-                        <p class="card-text text-white align-content-center d-grid justify-content-star">Si te gusta la fruta, te interesa nuestra tienda. <br>
-                            Recibe nuestras ofertas, promociones y toda la información que te interesa en tu buzón de email.
-                        </p> <br>
-                    </div>
-                    <div class="col-5 align-content-center d-grid justify-content-star"><a href="#" class="btn btn-success">Registrarse</a></div>
-                </div>
-            </div>
-        </div> 
-    </div>
-
-    <!--  Seccion 8 -->
-    <div class="row my-3 align-content-center d-flex justify-content-center" >
-        <div class="col-12 p-4  bg-white">
-            <h1 class="text-center ">Nuestros productos</h1>
-            <h3 class="text-center ">¿Porque comprar en Fruver la Huerta?</h3>
-            <div class="row">
-                <div class="col-12 col-sm-5 col-md-5 col-lg-4 ">
-                    <img src="img/Inicio-recursos/mujer-jugo.jpg" class="w-100" alt="">
-                </div>
-                <div class="col-12 col-sm-7 col-md-7 col-lg-8 align-content-center d-grid justify-content-center">
-                    <p class="">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Architecto provident eum necessitatibus eveniet quaerat blanditiis quam 
-                        consequuntur quasi exercitationem ab! Nemo iusto illum necessitatibus rem ratione ipsam sit inventore 
-                        doloribus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ut, vero sunt fugit delectus
-                        velit a inventore fuga laboriosam culpa asperiores doloribus recusandae ullam accusantium reiciendis dicta, ad commodi obcaecati!
-                    </p>
-                </div>
-            </div>
-          
-        </div> 
-    </div>
-
-    <!-- Seccion 9 -->
-    <div class="row">
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-            <div class="row align-content-center d-flex justify-content-center">
-                <div class="col-12 align-content-center d-flex justify-content-center">
-                    <img src="img/Inicio-recursos/canastas.jpg" class=" w-100"  alt="">
-                </div>
-                <div class="col-10 align-content-center d-flex justify-content-center ">
-                    <div class="text-center bg-white" >
-                        <h4>Frutas y verduras en Temporada</h4> 
-                        <p class=""  >
-                            Tener frutas y verduras en casa es más sencillo que nunca, con nuestra frutería online [...]
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-            <div class="row align-content-center d-flex justify-content-center">
-                <div class="col-12 align-content-center d-flex justify-content-center">
-                    <img src="img/Inicio-recursos/fresas.jpg" class="w-100"  alt="">
-                </div>
-                <div class="col-10 align-content-center d-flex justify-content-center ">
-                    <div class="text-center bg-white" >
-                        <h4> Comprar frutas y verduras online, ¿conservan el sabor?</h4> 
-                        <p class=""  >
-                        Cada día estamos más acostumbrados a realizar todas nuestras compras en Internet, desde regalos hasta [...]
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="col-12 col-sm-12 col-md-6 col-lg-4 ">
-            <div class="row align-content-center d-flex justify-content-center">
-                <div class="col-12 align-content-center d-flex justify-content-center">
-                    <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
-                </div>
-                <div class="col-10 align-content-center d-flex justify-content-center ">
-                    <div class="text-center bg-white" >
-                        <h4> Fruver la Huerta 1.0</h4> 
-                        <p class=""  >
-                            Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
-                        </p>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-        
-    <!-- Seccion de Comentarios -->
-    <h1 class="text-center my-4 ">Que Opinan nuestros clientes</h1>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="img/Inicio-recursos/espacioblanco.jpg" class="d-block w-100"  height="170px">
-            <div class="carousel-caption d-none d-md-block">
-              <h5> ⭐ ⭐ ⭐ ⭐ ⭐</h5>
-              <p class="fst-italic">Productos frescos y un gran surtido</p>
-              <p class=""> <b>Yudy Marcela Flores</b> / Facebook</p> 
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/Inicio-recursos/espacioblanco.jpg" class="d-block w-100" height="170px">
-            <div class="carousel-caption d-none d-md-block">
-                <h5> ⭐ ⭐ ⭐ ⭐ ⭐</h5>
-                <p class="fst-italic">Productos frescos y un gran surtido</p>
-                <p class=""> <b>Yudy Marcela Flores</b> / Facebook</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/Inicio-recursos/espacioblanco.jpg" class="d-block w-100" height="170px">
-            <div class="carousel-caption d-none d-md-block">
-                <h5> ⭐ ⭐ ⭐ ⭐ ⭐</h5>
-                <p class="fst-italic">Productos frescos y un gran surtido</p>
-                <p class=""> <b>Yudy Marcela Flores</b> / Facebook</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <!-- Seccion de Blog -->
-    <h1 class="text-center my-4 ">Blog de Cocina - El Club de lo Sano</h1>
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner  pb-5">
-          <div class="carousel-item active">
-            <div class="row ">
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/canastas.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4>Frutas y verduras en Temporada</h4> 
-                                <p class=""  >
-                                    Tener frutas y verduras en casa es más sencillo que nunca, con nuestra frutería online [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/fresas.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center  bg-white" >
-                                <h4> Comprar frutas y verduras online, ¿conservan el sabor?</h4> 
-                                <p class=""  >
-                                Cada día estamos más acostumbrados a realizar todas nuestras compras en Internet, desde regalos hasta [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4> Fruver la Huerta 1.0</h4> 
-                                <p class=""  >
-                                    Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4> Fruver la Huerta 1.0</h4> 
-                                <p class=""  >
-                                    Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/canastas.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4>Frutas y verduras en Temporada</h4> 
-                                <p class=""  >
-                                    Tener frutas y verduras en casa es más sencillo que nunca, con nuestra frutería online [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/fresas.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4> Comprar frutas y verduras online, ¿conservan el sabor?</h4> 
-                                <p class=""  >
-                                Cada día estamos más acostumbrados a realizar todas nuestras compras en Internet, desde regalos hasta [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4> Fruver la Huerta 1.0</h4> 
-                                <p class=""  >
-                                    Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4> Fruver la Huerta 1.0</h4> 
-                                <p class=""  >
-                                    Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/canastas.jpg" class="-3 w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4>Frutas y verduras en Temporada</h4> 
-                                <p class=""  >
-                                    Tener frutas y verduras en casa es más sencillo que nunca, con nuestra frutería online [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/fresas.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4> Comprar frutas y verduras online, ¿conservan el sabor?</h4> 
-                                <p class="fs-6"  >
-                                Cada día estamos más acostumbrados a realizar todas nuestras compras en Internet, desde regalos hasta [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4> Fruver la Huerta 1.0</h4> 
-                                <p class=""  >
-                                    Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
-                                </p>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-3 col-lg-3 ">
-                    <div class="row align-content-center d-flex justify-content-center">
-                        <div class="col-12 align-content-center d-flex justify-content-center">
-                            <img src="img/Inicio-recursos/mango.jpg" class="w-100"  alt="">
-                        </div>
-                        <div class="col-10 align-content-center d-flex justify-content-center ">
-                            <div class="text-center bg-white" >
-                                <h4> Fruver la Huerta 1.0</h4> 
-                                <p class="fs-6"  >
-                                    Lo que hace unos años parecía impensable, hoy es una realidad. Fruver La Huerta 1.0 [...]
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-      
-    </div>
-    <div class="row">
-        <div class="col-12 align-content-center d-flex justify-content-center">
-            <a href="#" class="btn btn-success col-4 col-sm-5">Ir al Blog de Cocina</a>
-        </div>
-    </div>
-    
     <!-- Seccion de Categorias -->
-    <div class="row my-4">
+    <div class="row my-1">
         <a href="#" class=" col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
-            <img src="img/Categorias/frutas.jpg" class="imagen-cambiante circulo-1 " height="200px" alt=""> 
+            <img src="../img/Categorias/frutas.jpg" class="imagen-cambiante circulo-1 " height="200px" alt=""> 
             <h3>Frutas</h3>
         </a>
         <a href="#" class=" col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
-            <img src="img/Categorias/pimenton.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
+            <img src="../img/Categorias/pimenton.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
             <h3>Verduras</h3>
         </a>
         <a href="#" class=" col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
-            <img src="img/Categorias/yerbas.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
+            <img src="../img/Categorias/yerbas.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
             <h3>Aromaticas</h3>
         </a>
         <a href="#" class="col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
-            <img src="img/Categorias/abarrotes.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
+            <img src="../img/Categorias/abarrotes.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
             <h3>Abarrotes</h3>
         </a>
         <a href="#" class=" col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
-            <img src="img/Categorias/carnes.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
+            <img src="../img/Categorias/carnes.jpg" class="imagen-cambiante circulo-1 "  alt=""> 
             <h3>Carnes</h3>
         </a>
         <a href="#" class="col-4 col-sm-4 col-md-2 col-lg-2 align-content-center d-block justify-content-center card-cat">
-            <img src="img/Categorias/lacteos.jpg" class="imagen-cambiante circulo-1 " alt=""> 
+            <img src="../img/Categorias/lacteos.jpg" class="imagen-cambiante circulo-1 " alt=""> 
             <h3>Lacteos</h3>
         </a>
         
@@ -1128,10 +605,10 @@
                     </svg>
                     <i class='bx bxl-x' >
                         <!-- Imagen 1 -->
-                        <img src="img/iconos/x-negro.png" alt="Img 1" class="imagen" id="img1" heigth="32" width="32">
+                        <img src="../img/iconos/x-negro.png" alt="Img 1" class="imagen" id="img1" heigth="32" width="32">
 
                         <!-- Imagen 2 (inicialmente oculta) -->
-                        <img src="img/iconos/x.png" heigth="37" width="37" alt="Img 2" class="imagen" id="img2" style=" display: none; ">
+                        <img src="../img/iconos/x.png" heigth="37" width="37" alt="Img 2" class="imagen" id="img2" style=" display: none; ">
                         <script>
                             // Obtener referencias a las imágenes
                             const img1 = document.getElementById('img1');
