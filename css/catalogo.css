@@ -9,6 +9,9 @@
 .presupuesto-empresa .card-text{
     font-size: 20px;
 }
+.pictures img{
+ height: 430px;
+}
 @media (max-width: 649px) {
   
     .presupuesto-empresa{
@@ -19,7 +22,7 @@
         font-size: 17px;
     }
     .presupuesto-empresa .card-text{
-        font-size: 15px;
+        font-size: 11px;
     }
     .presupuesto-empresa a{
         font-size: 11px;
@@ -29,7 +32,12 @@
         width: 100%;
         height: 35vh;
     }
+  
 
 
 }
-
+@media (max-width:765px) {
+    .pictures img{
+        height: auto;
+       }
+}
