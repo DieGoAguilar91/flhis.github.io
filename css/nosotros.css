@@ -55,7 +55,13 @@
     height: calc(100% - 10vh);
 }
 
-
+.pagos-horarios{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
 
 
 
