@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+} 
+.icon{
+  width: 30px;
+  height:  30px;
+}
+
+body {
+/*   background: #ccc; */
+background-image: url("../img/fondos/paisaje_boyancense.jpg");
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+
+@keyframes blink {
+    50% { border-color: transparent; }
+  }
+   #texto-bienvenida {
+    display: inline;
+    border-right: 3px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: blink 1s step-end infinite;
+    padding-right: 10px;
+  }
+.formulario{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    padding: 0;
+
+}
+.bienvenida{
+   padding: 10px;
+    color: #ccc;
+    height: 100%;
+
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.fa{
+  color: black;
+}
+  
+
+.form {
+  color: #ccc;
+height: 600px;
+    width: 400px;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.702);
+
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+
+  align-content: center;
+}
+
+
+.bienvenida .logo{
+    width: 150px;
+  
+}
+input:hover{
+  border: 10px solid #EF3B3A;
+box-shadow: #EF3B3A;
+}
+.input-group button{
+  border: 0px solid transparent;
+  background-color:#EF3B3A ;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items:self-end;
+  height: 45px;
+  color: white;
+}
+
+.form input{
+  border: 1px solid #ced4da;
+  outline: 0;
+  background: darken(white, 5%);
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.input-group input{
+position: relative;
+flex: 1 1 auto;
+width: 1%;
+min-width: 0;
+height: 45px;
+}
+.form .acceder {
+  width: 100%;
+  outline: 0;
+  background: #EF3B3A;
+  border: 0;
+  padding: 15px;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+
+
+.message {
+  margin: 15px 0 0;
+  color: darken(white, 30%);
+  font-size: 12px;
+}
+
+.message a {
+  color: #EF3B3A;
+  text-decoration: none;
+}
+
+.register-form {
+  display: none;
+}
+
+
+
+
+
+.info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: lighten(black, 10%);
+}
+
+.info span {
+  color: lighten(black, 30%);
+  font-size: 12px;
+}
+
+
+
+.info span .fa {
+  color: #EF3B3A;
+}
+
+
+/* Fondo */
+
+.fondo{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.bubbles {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.bubbles span img{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: #4fdcdc;
+  margin:0 4px;
+  border-radius:50% ;
+  box-shadow:  0 0 0 10px #4fdcdc44,
+  0 0 50px #18aacf,
+  0 0 100px #50d5e7;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));    
+}
+/* Colores de las burbujas VARIABLES DE USO V - F  */
+/* Morado */
+.bubbles span ._{
+  background: #4f51dc;
+  box-shadow:  0 0 0 10px #4fc3dc44,
+  0 0 50px #1852cf,
+  0 0 100px #508ce7; 
+}
+/* Azul */
+.bubbles span ._{
+  background: #0960d1;
+  box-shadow:  0 0 0 10px #4f75dc44,
+  0 0 50px #1849cf,
+  0 0 100px #508ce7; 
+}
+/* verde */
+.bubbles span .v{
+  background: #4fdc56;
+  box-shadow:  0 0 0 10px #4fdc7244,
+  0 0 50px #2dcf18,
+  0 0 100px #50e75d;   
+}
+/* Naranja */
+.bubbles span ._{
+  background: #ffea2d;
+  box-shadow:  0 0 0 10px #ffdf2d44,
+  0 0 50px #ffd82d,
+  0 0 100px #ffc72d;   
+}
+/* Amarillo */
+.bubbles span ._{
+  background: #eaff2d;
+  box-shadow:  0 0 0 10px #f1ff2d44,
+  0 0 50px #ffd82d,
+  0 0 100px #dfff2d;   
+}
+/* Negro */
+.bubbles span ._{
+  background: #000000;
+  box-shadow:  0 0 0 10px #0a0a0944,
+  0 0 50px #11110f,
+  0 0 100px #000000;   
+}
+.bubbles span ._{
+  background: #ff2d2d;
+  box-shadow:  0 0 0 10px #ff2d2d44,
+  0 0 50px #ff2d2d,
+  0 0 100px #ff2d2d;   
+}
+
+@keyframes animate{
+  0%{
+      transform: translateY(100vh) scale(0) ;
+  }
+  100%{
+      transform: translateY(-10vh) scale(1.5);
+  }  
+
+}
+
+.contenido{
+padding-top: 20px;
+  position: relative;
+  height: 140vh;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.702);
+}
+
+/* Redes Sociales*/
+.iconos{
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.ico {
+
+  position: relative;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  transition: all .8s;
+  cursor: pointer;
+}
+.iconos svg{
+  width: 40px;
+  height: 40px;
+  
+}
+
+.ico:hover {
+  background-color: #1877f2;
+  box-shadow:  0 0 20px #1877f2;
+ 
+ 
+}
+
+.ico:hover:nth-child(2) {
+  background-color: black;
+  box-shadow:  0 0 20px black;
+}
+
+.ico:hover:nth-child(3) {
+  background-color: #25d366;
+  box-shadow: 0 0 20px #25d366 ;
+}
+
+
+.ico i {
+  color:white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.9rem;
+}
+.ico:hover i{
+color: white;
+}
+svg circle {
+  stroke: white; 
+  stroke-dasharray: 80;
+  transition: all .8s ease-in-out;
+}
+
+.ico:hover circle {
+  stroke-dasharray: 110;
+  stroke: white;
+}
+
+
+@media (max-width: 768px) {
+  .contenido{
+      height: 150vh;
+    }
+    .form {
+   width: 100%;
+    height: auto;
+    background-color: transparent;
+    
+   
+    }
+}
