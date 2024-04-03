@@ -58,13 +58,13 @@ background-image: url("../img/fondos/paisaje_boyancense.jpg");
   
 
 .form {
-  color: #ccc;
+ 
 height: 600px;
     width: 400px;
   position: relative;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.702);
-
+border-radius: 20px;
   padding: 30px;
   text-align: center;
   align-items: center;
@@ -73,9 +73,8 @@ height: 600px;
 }
 
 
-.bienvenida .logo{
-    width: 150px;
-  
+.bienvenida .yipao{
+    width: 50%;
 }
 input:hover{
   border: 10px solid #EF3B3A;
@@ -93,7 +92,7 @@ box-shadow: #EF3B3A;
 }
 
 .form input{
-  border: 1px solid #ced4da;
+  color: #000000;
   outline: 0;
   background: darken(white, 5%);
   width: 100%;
@@ -129,7 +128,7 @@ height: 45px;
 .message {
   margin: 15px 0 0;
   color: darken(white, 30%);
-  font-size: 12px;
+  font-size: 18px;
 }
 
 .message a {
@@ -142,27 +141,6 @@ height: 45px;
 }
 
 
-
-
-
-.info h1 {
-  margin: 0 0 15px;
-  padding: 0;
-  font-size: 36px;
-  font-weight: 300;
-  color: lighten(black, 10%);
-}
-
-.info span {
-  color: lighten(black, 30%);
-  font-size: 12px;
-}
-
-
-
-.info span .fa {
-  color: #EF3B3A;
-}
 
 
 /* Fondo */
