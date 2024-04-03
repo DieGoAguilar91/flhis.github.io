@@ -336,7 +336,7 @@ svg circle {
 
 @media (max-width: 768px) {
   .contenido{
-      height: 100%;
+      height: 900px;
     }
     .form {
    width: 100%;
