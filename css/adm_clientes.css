@@ -1,0 +1,77 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* Comica */
+/* *{
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+} */
+*{
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;   
+}
+thead{
+    background: #191920;
+    color: #fff;
+}
+.tabla{
+    width: 100%;
+	background: #fff;
+	overflow: auto;
+    height: 500px;
+	border-radius: 4px;
+}
+
+/* Scroll Personalizado */
+
+
+body::-webkit-scrollbar {
+	width: 10px;
+    background: #191920;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #636674;
+	border-radius: 5px;
+	border-right: 2px solid #ffffff;
+}
+
+.tabla::-webkit-scrollbar {
+	width: 10px;
+}
+
+.tabla::-webkit-scrollbar-thumb {
+	background: #272727;
+	border-radius: 5px;
+}
+main{
+    margin-top: 40px;
+    padding: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+
+
+

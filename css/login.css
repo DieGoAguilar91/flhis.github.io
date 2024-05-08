@@ -236,7 +236,7 @@ height: 45px;
 .contenido{
 padding-top: 20px;
   position: relative;
-  height: 920px;
+  height: 900px;
   align-items: center;
   justify-content: center;
   background-position: center;
@@ -314,7 +314,7 @@ svg circle {
 
 @media (max-width: 768px) {
   .contenido{
-      height: 900px;
+    height: 895px;
     }
     .form {
    width: 100%;
@@ -324,3 +324,8 @@ svg circle {
    
     }
 }
+@media (max-width: 500px) {
+  .contenido{
+    height: 750px;
+    }
+  }

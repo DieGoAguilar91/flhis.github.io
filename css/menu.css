@@ -42,11 +42,53 @@ height: 205px;
 .navbar-brand{
 display: flex;
 } 
-.cesta, .usuario{
+.cesta, .cliente{
     text-decoration: none;
     visibility: hidden;
    
 }
+
+
+/* Estilo para la barra de navegación (navbar) efecto deslizante */
+.menu {
+top: -300px; /* Inicialmente oculto arriba */
+left: 0;
+width: 100%;
+transition: top 0.3s ease; /* Transición suave */
+z-index: 100;
+}
+.menu.mostrar {
+    z-index: 999;
+    position: fixed;
+    top: 0px;  
+}
+.mensaje-auto.ocultar {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+}
+.encabezado1.ocultar {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+    z-index: -10;
+}
+.redes.ocultar {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    padding: 0;
+}
+#mensaje {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 1s ease-in-out;
+}
+
 
 /* y 778px */
 @media (max-width: 992px) {
@@ -79,7 +121,7 @@ display: flex;
     .navbar-brand{
         gap: 15px;
     }
-    .cesta, .usuario{
+    .cesta, .cliente{
         text-decoration: none;
         visibility: visible;
         
